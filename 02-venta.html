@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venta de Entradas</title>
+    <link rel="stylesheet" type="text/css" href="stylesVenta.css" />
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <h1>Venta de Entradas</h1>
+    </header>
+    <main>
+      <form>
+        <label for="eventName">Nombre del Evento:</label>
+        <!-- Campo de texto del nombre del evento -->
+        <input
+          type="text"
+          id="eventName"
+          name="eventName"
+          value="Concierto Feid"
+          readonly
+          required
+        />
+
+        <label for="eventLocation">Localidad:</label>
+        <input type="text" id="eventLocation" name="eventLocation" required />
+
+        <label for="ticketPrice">Precio de la Entrada:</label>
+        <input
+          type="number"
+          id="ticketPrice"
+          name="ticketPrice"
+          min="0"
+          step="any"
+          required
+        />
+
+        <button onclick="window.location.href = '/VentaExitosa.html'">
+          Vender
+        </button>
+        <!-- Botón para ir a la página de ofertas -->
+        <button onclick="window.location.href = '02-oferta.html'">
+          Ver Ofertas
+        </button>
+      </form>
+    </main>
+  </body>
+</html>

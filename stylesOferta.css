@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #000; /* Fondo negro */
+  color: white; /* Texto blanco */
+}
+
+header {
+  background-color: transparent; /* Fondo transparente */
+  color: white;
+  padding: 1rem;
+  position: fixed; /* Establecer el encabezado fijo */
+  top: 0; /* Alinear en la parte superior */
+  left: 0; /* Alinear a la izquierda */
+  width: 100%; /* Ancho automático */
+  display: flex; /* Usar display flex para alinear elementos */
+  justify-content: space-between; /* Alinear elementos al principio y al final */
+  align-items: center; /* Alinear elementos verticalmente al centro */
+}
+
+.event-info {
+  position: absolute; /* Establecer posición absoluta para el texto del evento */
+  top: 20px; /* Espacio desde la parte superior */
+  left: 50%; /* Alinear al centro horizontalmente */
+  transform: translateX(-50%); /* Centrar horizontalmente */
+  color: gold; /* Color dorado */
+  font-family: Copperplate Gothic, sans-serif; /* Fuente Copperplate Gothic */
+  text-align: center; /* Alinear texto al centro */
+}
+
+.event-name {
+  font-size: 24px; /* Tamaño de fuente para el nombre del evento */
+  margin-bottom: 10px; /* Espacio inferior */
+}
+
+.event-description {
+  font-size: 18px; /* Tamaño de fuente para la descripción del evento */
+  font-family: "Times New Roman", Times, serif; /* Fuente más tradicional */
+  color: white; /* Color blanco */
+}
+
+main {
+  margin-top: 100px; /* Espacio para que el contenido no esté detrás del encabezado */
+  padding-top: 40px; /* Ajuste adicional para compensar el encabezado fijo */
+  display: flex; /* Usar display flex para alinear elementos */
+  justify-content: space-around; /* Alinear elementos al centro horizontalmente */
+  align-items: flex-start; /* Alinear elementos verticalmente arriba */
+}
+
+.column {
+  width: 30%; /* Ancho de cada columna */
+  padding: 20px; /* Relleno */
+  border-radius: 10px; /* Borde redondeado */
+  background-color: #111; /* Color de fondo de las columnas */
+  display: flex; /* Usar flexbox */
+  flex-direction: column; /* Alinear elementos en columna */
+  align-items: center; /* Alinear elementos al centro horizontalmente */
+}
+
+.column h2 {
+  font-size: 20px; /* Tamaño de fuente para los subtítulos */
+  margin-bottom: 20px; /* Espacio inferior */
+}
+
+.examples {
+  font-size: 16px; /* Tamaño de fuente para los ejemplos */
+  display: flex; /* Usar flexbox */
+  flex-direction: column; /* Alinear elementos en columna */
+  align-items: center; /* Alinear elementos al centro horizontalmente */
+}
+
+.examples p {
+  margin-bottom: 20px; /* Espaciado entre ejemplos */
+}
+
+.buy-column {
+  display: flex; /* Usar flexbox */
+  flex-direction: column; /* Alinear elementos en columna */
+  align-items: center; /* Alinear elementos al centro horizontalmente */
+}
+
+.buy-button {
+  background-color: #ff4d4d; /* Color rojo para los botones */
+  color: white; /* Texto blanco */
+  border: none; /* Eliminar borde */
+  border-radius: 25px; /* Borde redondeado */
+  cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+  padding: 10px 20px; /* Ajuste del relleno */
+  margin-bottom: 15px; /* Espacio inferior */
+  width: 100%; /* Ancho completo */
+  max-width: 200px; /* Ancho máximo */
+  font-size: 16px; /* Tamaño de fuente */
+  font-weight: bold; /* Texto en negrita */
+  text-transform: uppercase; /* Convertir texto a mayúsculas */
+  letter-spacing: 1px; /* Espaciado entre letras */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transición suave para cambios */
+}
+
+.buy-button:hover {
+  background-color: #e60000; /* Color de fondo más oscuro al pasar el cursor */
+  border-color: #e60000; /* Color del borde más oscuro al pasar el cursor */
+}
+
+.sell-button {
+  background-color: #4caf50; /* Color verde para el botón de vender */
+  color: white; /* Texto blanco */
+  border: none; /* Eliminar borde */
+  border-radius: 25px; /* Borde redondeado */
+  cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+  padding: 10px 20px; /* Ajuste del relleno */
+  margin-bottom: 15px; /* Espacio inferior */
+  width: 100%; /* Ancho completo */
+  max-width: 200px; /* Ancho máximo */
+  font-size: 16px; /* Tamaño de fuente */
+  font-weight: bold; /* Texto en negrita */
+  text-transform: uppercase; /* Convertir texto a mayúsculas */
+  letter-spacing: 1px; /* Espaciado entre letras */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transición suave para cambios */
+}
+
+.sell-button:hover {
+  background-color: #45a049; /* Color de fondo más oscuro al pasar el cursor */
+}

@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #000; /* Fondo negro */
+  color: #fff; /* Color del texto blanco */
+}
+
+/* Estilo para el encabezado h1 */
+h1 {
+  color: #fff; /* Color del encabezado blanco */
+}
+
+/* Estilo para las etiquetas */
+label {
+  color: #fff; /* Color de las etiquetas blanco */
+}
+
+main {
+  margin-top: 100px; /* Espacio para que el contenido no esté detrás del encabezado */
+  display: flex; /* Usar display flex para alinear elementos */
+  justify-content: center; /* Alinear elementos al centro horizontalmente */
+}
+
+form {
+  border: 1px solid #ddd; /* Borde del formulario */
+  padding: 20px; /* Relleno del formulario */
+  border-radius: 10px; /* Borde redondeado */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+label {
+  display: block; /* Mostrar etiquetas en bloque */
+  margin-bottom: 10px; /* Espacio inferior */
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%; /* Ancho completo */
+  padding: 10px; /* Relleno del campo de entrada */
+  margin-bottom: 20px; /* Espacio inferior */
+  border: 1px solid #ccc; /* Borde del campo de entrada */
+  border-radius: 5px; /* Borde redondeado */
+  box-sizing: border-box; /* Incluir el relleno y el borde en el ancho */
+}
+
+button {
+  padding: 10px 20px; /* Relleno del botón */
+  background-color: #007bff; /* Color de fondo azul */
+  color: white; /* Color de texto blanco */
+  border: none; /* Eliminar borde */
+  border-radius: 5px; /* Borde redondeado */
+  cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+  margin-right: 10px; /* Margen derecho para separar el botón de otros elementos */
+}
+
+button:hover {
+  background-color: #0056b3; /* Cambiar color de fondo al pasar el cursor */
+}

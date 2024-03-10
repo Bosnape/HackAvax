@@ -1,0 +1,76 @@
+body {
+  font-family: "Copperplate Gothic", sans-serif; /* Cambia el tipo de letra a Copperplate Gothic */
+  background-color: black; /* Cambia el color de fondo a negro */
+  color: gold; /* Cambia el color del texto a dorado */
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  color: gold; /* Cambia el color del título a dorado */
+}
+
+main {
+  padding: 1rem;
+}
+
+.ticket {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+#eventImages {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+  grid-template-rows: repeat(2, auto); /* Dos filas de altura automática */
+  gap: 20px; /* Espacio entre las imágenes */
+}
+
+#eventImages img {
+  max-width: 100%; /* Asegura que las imágenes no sean más anchas que su contenedor */
+  display: block; /* Asegura que las imágenes se comporten como elementos en línea */
+  margin: auto; /* Centra las imágenes horizontalmente */
+}
+
+#eventImages img:nth-child(n + 3) {
+  margin-top: 40px; /* Espacio adicional en la parte superior para separar las filas */
+}
+
+.connectWalletButton {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.connectWalletButton:hover {
+  background-color: #0056b3;
+}
+
+.connectWalletButton:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  outline: none;
+}
